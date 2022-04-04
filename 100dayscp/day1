@@ -1,0 +1,32 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+       int a=0,b=0,l=nums.length,k=-1;
+        int ar[]=new int[2];
+       label:
+       for(int i=0;i<l;i++)
+       {
+           a=nums[i];
+           for(int j=i+1;j<l;j++)
+           {
+               b=nums[j];
+               if(a+b==target)
+               {
+                   k=1;
+                   ar[0]=i;ar[1]=j;
+                   break label;
+           }
+                   
+           }
+       }
+        if(k==-1)
+        {
+            ar[0]=-1;
+            ar[1]=-1;
+            return ar;
+        }
+        
+            return ar;
+            
+        
+    }
+}
